@@ -11,6 +11,9 @@ for (let index = 0; index < 10; index++) {
         .then(joke => {
             // Whenever there's an <ol> tag, it will insert the key-value as a <li> tag in the HTML file
             $('ol').append('<li class= "list-group-item">' + joke.value + '</li>');
+            if (index == 9) {
+                $('ol').append('<div class="text-bg-success p-3">Complete</div>');
+            }
         })
         // Handle Error
         .catch(error =>
