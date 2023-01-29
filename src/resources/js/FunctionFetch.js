@@ -4,8 +4,8 @@ for (let index = 0; index < 10; index++) {
         .then(response => response.json() // Convert into json
         )
         // Handle Data
-        .then(response => {
-            $('ol').append('<li class= "lead list-group-item">' + response.value + '</li>');
+        .then(joke => {
+            $('ol').append('<li class= "lead list-group-item">' + joke.value + '</li>');
         })
         // Handle Error
         .catch(error =>
