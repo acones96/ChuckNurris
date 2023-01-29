@@ -10,7 +10,7 @@ for (let index = 0; index < 10; index++) {
         // Handle Data
         .then(joke => {
             // Whenever there's an <ol> tag, it will insert the key-value as a <li> tag in the HTML file
-            $('ol').append('<li class= "lead list-group-item">' + joke.value + '</li>');
+            $('ol').append('<li class= "list-group-item">' + joke.value + '</li>');
         })
         // Handle Error
         .catch(error =>
