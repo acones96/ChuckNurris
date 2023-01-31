@@ -5,7 +5,7 @@ for (let index = 0; index < 10; index++) {
         // Handle Response 
         .then(
             // Convert the response into json
-            response => response.json() 
+            response => response.json()
         )
         // Handle Data
         .then(joke => {

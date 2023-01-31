@@ -6,8 +6,8 @@ $(document).ready(function () {
 			// Whenever there's an <ol> tag, it will insert the key-value as a <li> tag in the HTML file
 			$("ol").append('<li class= "list-group-item">' + response.value + '</li>');
 			if (index == 9) {
-                $('ol').append('<div class="text-bg-success p-3">Complete</div>');
-            }
+				$('ol').append('<div class="text-bg-success p-3">Complete</div>');
+			}
 		})
 	}
 });
